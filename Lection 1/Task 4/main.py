@@ -26,22 +26,24 @@ math_operation = (input("Виберіть математичну дію +,-,/,*,
 a=(float(input("Введіть перше число: ")))
 b=(float(input("Введіть друге число: ")))
 
-if (math_operation=='+'):
-    result=plus(a,b)
-elif(math_operation=='-'):
-    result=min(a,b)
-elif(math_operation=='*'):
-    result=mult(a,b)
-elif(math_operation=='/'):
-    result=div(a,b)
-elif(math_operation=='pow'):
-    result=pow(a,b)
-elif(math_operation=='root'):
-    result=root(a,b)
-else:
-    print('Ви допустили помилку при введенні, перезапустіть програму i повторіть ще раз'),
-    exit()
+match math_operation:
+    case '+': 
+        result=plus(a,b)
+    case '-':
+        result=min(a,b)  
+    case '*':
+        result=mult(a,b)   
+    case '/':
+        result=div(a,b)
+    case 'pow':
+        result=pow(a,b)    
+    case 'root':
+        result=root(a,b)  
+    case _:
+        print('Ви допустили помилку при введенні, перезапустіть програму i повторіть ще раз'),
+        exit()
+    
+print ('Результатом математичноъ операції є число: ', result)     
 
-print('Результатом математичноъ операції є число: ', result)    
 
 
