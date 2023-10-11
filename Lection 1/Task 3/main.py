@@ -1,13 +1,13 @@
-temp_scale = (input('Оберіть, ви хочете перевести в цельсії(c) чи в фаренгейти(f)'))
-temp = (float(input('Введіть значення температури, яку хочете конвертувати: ')))
+temp_scale = (input('Choose whether you want to convert to Celsius(c) or Fahrenheit(f)'))
+temp = (float(input('Enter the temperature value you want to convert: ')))
 if(temp_scale=='c'):
     temp = (temp-32)/1.8
-    print('Конвертоване значення = ', temp)   
+    print('Converted value = ', temp)   
 elif(temp_scale=='f'):
     temp = (temp*1.8)+32
-    print('Конвертоване значення = ', temp)   
+    print('Converted value = ', temp)   
 else:
-    print ('Помилка! Ви ввели неправильне число')
+    print ('Error! You entered incorrect number!')
  
          
     

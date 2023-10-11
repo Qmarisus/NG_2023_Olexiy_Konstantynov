@@ -1,4 +1,4 @@
-print ('Введіть цілі числа для обчислення їх суми:')
-first_number = (int(input('Першее число: ')))
-second_number = (int(input('Друге число: ')))
-print ('Сума =',first_number+second_number)
+print ('Enter numbers for calculate their sum:')
+first_number = (int(input('First number: ')))
+second_number = (int(input('Second number: ')))
+print ('Sum =',first_number+second_number)

@@ -22,9 +22,9 @@ def root (a,b):
     c=a**(1/b)
     return c
   
-math_operation = (input("Виберіть математичну дію +,-,/,*,pow,root: "))
-a=(float(input("Введіть перше число: ")))
-b=(float(input("Введіть друге число: ")))
+math_operation = (input("Choose math operation +,-,/,*,pow,root: "))
+a=(float(input("Enter first number: ")))
+b=(float(input("Enter second number: ")))
 
 match math_operation:
     case '+': 
@@ -40,10 +40,10 @@ match math_operation:
     case 'root':
         result=root(a,b)  
     case _:
-        print('Ви допустили помилку при введенні, перезапустіть програму i повторіть ще раз'),
+        print('You made an input error, reload program and try again.'),
         exit()
     
-print ('Результатом математичноъ операції є число: ', result)     
+print ('Result of math operation is number: ', result)     
 
 
 
